@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   pyinstaller-build-linux:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       # GitHub 仓库的代码拉下来
       - uses: actions/checkout@v4
