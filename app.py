@@ -8,7 +8,8 @@ def create_app():
 
     @app.route("/hello", methods=["GET"])
     def hello():
-        ret = jsonify({'statusCode': 500, 'msg': 'hello'})
+        a = 1 / 0
+        ret = jsonify({'statusCode': 200, 'msg': 'hello'})
         return ret
 
     @app.route("/text", methods=["POST"])
